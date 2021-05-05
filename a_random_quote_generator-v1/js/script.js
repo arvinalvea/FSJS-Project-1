@@ -104,6 +104,10 @@ function printQuote() {
 
 newQuote = printQuote();
 document.getElementById("quote-box").innerHTML = newQuote;
+
+/*
+This function will auto-refresh to quote and background color every 10 seconds.
+*/
 setInterval(function () {
     printQuote();
 }, 10000);
